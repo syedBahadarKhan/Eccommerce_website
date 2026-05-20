@@ -1,0 +1,61 @@
+.whatsapp-float-btn {
+  position: fixed;
+  bottom: 96px; /* High enough to stay above Footer and allow Chatbot below or next to it */
+  right: 24px;
+  background-color: #25D366;
+  color: #fff;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.4);
+  z-index: 99;
+  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.whatsapp-float-btn:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.6);
+}
+
+.whatsapp-float-btn .tooltip {
+  position: absolute;
+  right: 70px;
+  background-color: var(--text-primary);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: var(--transition);
+  box-shadow: var(--shadow-sm);
+}
+
+.whatsapp-float-btn .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent var(--text-primary);
+}
+
+.whatsapp-float-btn:hover .tooltip {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .whatsapp-float-btn {
+    bottom: 84px;
+    right: 16px;
+    width: 48px;
+    height: 48px;
+  }
+}

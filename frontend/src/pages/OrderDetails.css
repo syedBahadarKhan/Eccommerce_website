@@ -1,0 +1,277 @@
+.order-details-page {
+  padding: 60px 24px;
+}
+
+.order-details-header {
+  text-align: left;
+  margin-bottom: 40px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 24px;
+}
+
+.order-details-header h1 {
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+}
+
+.order-details-id {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.order-details-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 48px;
+  align-items: flex-start;
+}
+
+.order-info-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  text-align: left;
+}
+
+.info-card {
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+}
+
+.info-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 16px;
+  margin-bottom: 20px;
+}
+
+.info-icon {
+  color: var(--color-accent);
+}
+
+.info-card-header h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text-primary);
+}
+
+.info-card-body p {
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  margin-bottom: 12px;
+}
+
+.info-card-body p strong {
+  color: var(--text-primary);
+}
+
+/* Status alerts */
+.status-alert {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 20px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
+.status-alert.success {
+  background-color: #E8F5E9;
+  color: var(--color-success);
+}
+
+.status-alert.pending {
+  background-color: #FFF3E0;
+  color: #E65100;
+}
+
+.easypaisa-verification-details {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--color-border);
+  padding: 16px;
+  border-radius: 4px;
+  margin: 16px 0;
+}
+
+.easypaisa-verification-details code {
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+}
+
+.admin-note {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+/* Invoice list rows */
+.invoice-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.invoice-item-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.invoice-item-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.invoice-item-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.invoice-item-details {
+  flex: 1;
+}
+
+.invoice-item-details h4 a {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  transition: var(--transition);
+}
+
+.invoice-item-details h4 a:hover {
+  color: var(--color-accent);
+}
+
+.invoice-item-details p {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.invoice-item-total {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Invoice summary card right side */
+.order-summary-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.summary-card,
+.admin-actions-card {
+  background-color: #fff;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  padding: 32px;
+  box-shadow: var(--shadow-sm);
+  text-align: left;
+}
+
+.summary-card h3,
+.admin-actions-card h3 {
+  font-family: var(--font-serif);
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  border-bottom: 1px solid var(--color-border);
+  padding-bottom: 12px;
+}
+
+.invoice-summary-totals {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.summary-row.total-row {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  border-top: 1px solid var(--color-border);
+  padding-top: 14px;
+  margin-top: 6px;
+}
+
+/* Admin Card Actions */
+.admin-panel-subtitle {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.admin-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.admin-action-btn {
+  width: 100%;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 14px;
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.admin-action-btn.pay {
+  background-color: var(--color-accent);
+}
+
+.admin-action-btn.pay:hover:not(.disabled) {
+  background-color: var(--color-accent-hover);
+}
+
+.admin-action-btn.deliver {
+  background-color: var(--text-primary);
+}
+
+.admin-action-btn.deliver:hover:not(.disabled) {
+  background-color: var(--color-accent);
+}
+
+.admin-action-btn.disabled {
+  background-color: var(--color-border);
+  color: var(--text-muted);
+  cursor: not-allowed;
+}
+
+@media (max-width: 992px) {
+  .order-details-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
